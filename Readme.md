@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Кухарь](https://up.htmlacademy.ru/adaptive/16/user/644799).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Майстренко](https://htmlacademy.ru/profile/natalie)
 
 ---
 
