@@ -6,22 +6,25 @@
   </head>
   <body>
     <header class="site-header">
+      <a href="#" class="site-header__logo">
+        <img src="http://placehold.it/150x100" class="site-header__logo-image" alt="Логотип">
+      </a>
       <nav class="site-nav">
-        <img src="http://placehold.it/150x100" class="site-logo" alt="Логотип">
-        <button class="menu-toggle">Бургер</button>
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-nav__item"><a href="#">Конкурс</a></li>
-          <li class="site-nav__item"><a href="#">Html academy</a></li>
-        </ul>
-         <h1 class="page-form__preview">Фотографии пользователей</h1>
+        <div class="site-nav__wrapper">
+          <button class="site-nav__toggle button">Бургер</button>
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html">Главная</a></li>
+            <li class="site-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-nav__item"><a href="#">Конкурс</a></li>
+            <li class="site-nav__item"><a href="#">Html academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="site-content">
       <section class="site-photos">
-        <p>Взгляните на фотографии, которые выкладывают пользователи!<br>
-        Видите, как не хватает ваших?</p>
+        <h1>Взгляните на фотографии, которые выкладывают пользователи!<br>
+        Видите, как не хватает ваших?</h1>
         <div class="site-photos__panorama">
           <img src="http://placehold.it/150x100" alt="Панорама дня">
           <div class="comment">
@@ -93,7 +96,7 @@
         Выкладывайте все, что накопилось на телефоне</h2>
         <div class="post-photo__wrapper">
           <img src="http://placehold.it/150x100" alt="Ваша фотография">
-          <ul class="post-photo__settings">
+          <ul class="post-photo__settings settings">
             <li class="settings__item">
               <div></div>
             </li>
@@ -104,21 +107,23 @@
               <div></div>
             </li>
           </ul>
-          <button class="button">Запостить</button>
-          <button class="button" disabled>Отмена</button>
+          <button class="button" type="button">Запостить</button>
+          <button class="button button--disabled" type="button" disabled>Отмена</button>
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <img src="http://placehold.it/150x100" class="site-logo" alt="Логотип">
+      <a href="#" class="site-footer__logo">
+        <img src="http://placehold.it/150x100" class="site-footer__logo-image" alt="Логотип">
+      </a>
       <ul class="social-list">
-        <li class="social__item">
+        <li class="social-list__item">
           <a href="#"></a>
         </li>
-        <li class="social__item">
+        <li class="social-list__item">
           <a href="#"></a>
         </li>
-        <li class="social__item">
+        <li class="social-list__item">
           <a href="#"></a>
         </li>
       </ul>

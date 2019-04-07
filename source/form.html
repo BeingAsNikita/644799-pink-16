@@ -6,19 +6,23 @@
   </head>
   <body>
     <header class="site-header">
+      <a href="#" class="site-header__logo">
+        <img src="http://placehold.it/150x100" class="site-header__logo-image" alt="Логотип">
+      </a>
       <nav class="site-nav">
-        <img src="http://placehold.it/150x100" class="site-logo" alt="Логотип">
-        <button class="menu-toggle">Бургер</button>
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html">Главная</a></li>
-          <li class="site-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-nav__item"><a href="#">Конкурс</a></li>
-          <li class="site-nav__item"><a href="#">Html academy</a></li>
-        </ul>
+        <div class="site-nav__wrapper">
+          <button class="site-nav__toggle" type="button">Бургер</button>
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html">Главная</a></li>
+            <li class="site-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-nav__item"><a href="#">Конкурс</a></li>
+            <li class="site-nav__item"><a href="#">Html academy</a></li>
+          </ul>
+        </div>
       </nav>
-      <h1 class="page-form__preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="form-preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
-    <section class="page-form">
+    <section class="page-form  container">
       <p class="page-form__preview">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
@@ -105,7 +109,7 @@
               Опишите свои эмоции
             </legend>
             <textarea>
-            Можно прям в крассках, не стесняясь в выражениях
+            Можно прям в красках, не стесняясь в выражениях
             </textarea>
           </fieldset>
           <input type="submit" class="button site-form__button">
@@ -113,15 +117,17 @@
         </form>
       </section>
       <footer class="site-footer">
-        <img src="http://placehold.it/150x100" class="site-logo" alt="Логотип">
+        <a href="#" class="site-footer__logo">
+          <img src="http://placehold.it/150x100" class="site-footer__logo-image" alt="Логотип">
+        </a>
         <ul class="social-list">
-          <li class="social__item">
+          <li class="social-list__item">
             <a href="#"></a>
           </li>
-          <li class="social__item">
+          <li class="social-list__item">
             <a href="#"></a>
           </li>
-          <li class="social__item">
+          <li class="social-list__item">
             <a href="#"></a>
           </li>
         </ul>
