@@ -1,0 +1,15 @@
+.site-nav {
+  background-color: $nav;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 32px;
+
+}
+.site-nav__list {
+  text-align: center;
+  list-style: none;
+
+}
+.site-nav__item {
+  color: $nav-text;
+}
