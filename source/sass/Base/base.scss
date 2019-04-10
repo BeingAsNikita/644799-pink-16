@@ -3,7 +3,8 @@ body {
   background-color: #fff;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
-  font-weight: 24px;
+  line-height: 24px;
+  color: $dark;
 
 }
 
@@ -13,4 +14,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+ul {
+  list-style: none;
 }

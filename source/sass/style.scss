@@ -1,5 +1,13 @@
 @import 'Base/variables.scss';
 @import 'Base/normalize.scss';
+@import 'Base/visually-hidden.scss';
 @import 'Base/fonts.scss';
 @import 'Base/base.scss';
+@import 'Base/container.scss';
+@import 'components/site-header.scss';
 @import 'components/site-nav.scss';
+@import 'components/site-reviews.scss';
+@import 'components/site-photos.scss';
+@import 'components/comment.scss';
+@import 'components/post-photo.scss';
+@import 'components/tariffs.scss';

@@ -1,0 +1,13 @@
+.comment {
+  background-color: $field-grey;
+}
+.comment__author {
+  font-weight: bold;
+}
+.comment__date {
+  font-family: italic;
+  color: lighten($dark, 25%);
+}
+.comment__like {
+  color: $accent;
+}

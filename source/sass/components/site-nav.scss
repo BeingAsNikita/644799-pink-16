@@ -1,8 +1,8 @@
 .site-nav {
-  background-color: $nav;
+  background-color: $dark;
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 32px;
+  line-height: 32px;
 
 }
 .site-nav__list {
@@ -11,5 +11,5 @@
 
 }
 .site-nav__item {
-  color: $nav-text;
+  color: $text-white;
 }

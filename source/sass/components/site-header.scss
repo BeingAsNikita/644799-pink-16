@@ -1,0 +1,14 @@
+.site-header {
+  background-image: url('../../img/bg-back-mobile@1x.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $text-white;
+}
+.site-header__info {
+ background-image: url('../../img/iphone-hand-mobile@1x.png');
+ background-repeat: no-repeat;
+}
+.site-header__preview {
+  font-size: 24px;
+  font-weight: 300;
+}
