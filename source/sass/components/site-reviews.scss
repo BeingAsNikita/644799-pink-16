@@ -1,21 +1,36 @@
+
+.site-reviews {
+  padding-top: 45px;
+}
 .site-reviews__field {
+
   &--grey {
     background-color: $field-grey;
   }
+
+}
+.site-reviews__item {
+
+
 }
 .site-reviews__h {
   font-size: 24px;
+  text-align: center;
   font-weight: 300;
-
+  margin-top: 0;
 }
+
 .site-reviews__link {
   color: $accent;
   text-decoration: underline;
 }
-.site-reviews__item-h {
+.site-reviews__h-item {
   font-size: 18px;
   line-height: 10px;
+  font-weight: 300;
+  margin-top: 0;
 }
+
 .site-reviews__author-name {
     font-size: 18px;
   line-height: 30px;

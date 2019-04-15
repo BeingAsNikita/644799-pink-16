@@ -4,6 +4,7 @@
   font-size: 18px;
   line-height: 32px;
 
+
 }
 .site-nav__list {
   text-align: center;
@@ -12,4 +13,15 @@
 }
 .site-nav__item {
   color: $text-white;
+  width: 100%;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000;
+  font-weight: 700;
+
+}
+.site-nav__link {
+ display: block;
+ width: 100%;
+ padding-top: 24px;
+  padding-bottom: 24px;
 }
