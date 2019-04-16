@@ -13,8 +13,8 @@
 .site-nav__item {
   color: $text-white;
   width: 100%;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid $site-nav-top;
+  border-bottom: 1px solid $site-nav-bot;
   font-weight: 700;
 }
 
