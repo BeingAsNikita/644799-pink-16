@@ -1,5 +1,5 @@
 .site-nav {
-  background-color: $dark;
+  background-color: $primary-dark;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 32px;
@@ -11,10 +11,10 @@
 }
 
 .site-nav__item {
-  color: $text-white;
+  color: $white;
   width: 100%;
-  border-top: 1px solid $site-nav-top;
-  border-bottom: 1px solid $site-nav-bot;
+  border-top: 1px solid $grey-lighten;
+  border-bottom: 1px solid $black;
   font-weight: 700;
 }
 

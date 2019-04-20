@@ -1,5 +1,5 @@
 .comment {
-  background-color: $field-grey;
+  background-color: $primary-ligth;
 }
 
 .comment__author {
@@ -8,7 +8,7 @@
 
 .comment__date {
   font-family: italic;
-  color: lighten($dark, 25%);
+  color:$primary-dark;
 }
 
 .comment__like {
