@@ -1,0 +1,19 @@
+.comment {
+  background-color: $primary-ligth;
+}
+
+.comment__author {
+  font-weight: bold;
+}
+
+.comment__date {
+  font-family: italic;
+  color: $primary-dark;
+}
+
+.comment__like {
+  color: $accent;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+}
