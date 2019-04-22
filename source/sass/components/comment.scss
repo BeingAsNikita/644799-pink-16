@@ -1,5 +1,6 @@
 .comment {
-  background-color: $primary-ligth;
+  width: 100%;
+  padding: 25px 18px 26px 18px;
 }
 
 .comment__author {
@@ -12,6 +13,7 @@
 }
 
 .comment__like {
+  margin-top: 18px;
   color: $accent;
   text-transform: uppercase;
   font-size: 12px;
