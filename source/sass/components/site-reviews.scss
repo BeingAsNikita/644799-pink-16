@@ -21,11 +21,16 @@
   text-decoration: underline;
 }
 
+.site-reviews__item {
+  text-align: center;
+  padding: 14px;
+}
+
 .site-reviews__title {
   font-size: 18px;
   line-height: 10px;
-  font-weight: 300;
-  margin-top: 0;
+  font-weight: 700;
+  margin-top: 35px;
 }
 
 .site-reviews__author-name {
@@ -36,4 +41,15 @@
 
 .site-reviews__text {
   line-height: 30px;
+}
+
+@media (min-width: $desktop-width) {
+  .site-reviews__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .site-reviews__item {
+   width: 32%;
+  }
 }
