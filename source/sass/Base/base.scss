@@ -22,11 +22,7 @@ ul {
   padding: 0;
 }
 
-p {
-  margin: 0;
-}
-
-@mixin visually-hidden() {
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;

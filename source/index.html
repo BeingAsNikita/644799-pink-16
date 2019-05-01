@@ -8,29 +8,33 @@
   </head>
   <body>
     <header class="site-header">
-        <a href="index.html" class="site-header__logo-link">
-          <img src="img/logo-pink-white-mobile.svg" class="site-header__logo-image" alt="Логотип">
-        </a>
-      <nav class="site-nav">
-        <div class="site-nav__wrapper">
-          <button class="site-nav__toggle" type="button">Бургер</button>
-          <ul class="site-nav__list">
-            <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="form.html">Конкурс</a></li>
-            <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="site-header__nav-wrapper">
+        <div class="site-header__container">
+          <a href="index.html" class="site-header__logo-link">
+            <img src="img/logo-pink-white-mobile.svg" class="site-header__logo-image" alt="Логотип">
+          </a>
+          <nav class="site-nav">
+            <div class="site-nav__wrapper">
+              <button class="site-nav__toggle" type="button">Бургер</button>
+              <ul class="site-nav__list">
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фотографии</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="form.html">Конкурс</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
       <h1 class="visually-hidden">Развлекательное приложение Пинк</h1>
-      <div class="site-header__info">
+      <div class="site-header__info container">
         <p>Взгляни на жизнь иначе!</p>
         <button class="button button--download" type="button">Скачать приложение
         </button>
         <ul class="os-list">
-          <li class="os-list__item"><a href="#"><img src="http://placehold.it/150x100" alt="ios"></a></li>
-          <li class="os-list__item"> <a href="#"> <img src="http://placehold.it/150x100" alt="android"></a></li>
-          <li class="os-list__item"><a href="#"> <img src="http://placehold.it/150x100" alt="windows"></a></li>
+          <li class="os-list__item"><a href="#"><img src="img/logo-apple.svg" alt="ios"></a></li>
+          <li class="os-list__item"> <a href="#"> <img src="img/logo-android.svg" alt="android"></a></li>
+          <li class="os-list__item"><a href="#"> <img src="img/logo-microsoft.svg" alt="windows"></a></li>
         </ul>
         <p class="site-header__os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -41,8 +45,8 @@
       <p class="site-reviews__h-item">Устали от серости мегаполиса?</p>
       <p class="site-reviews__h-item">Нам есть, что вам предложить!</p>
       </h2>
-      <div class="site-reviews__field site-reviews__field--grey container">
-        <ul class="site-reviews__list">
+      <div class="site-reviews__field site-reviews__field--grey">
+        <ul class="site-reviews__list container">
           <li class="site-reviews__item">
             <h3  class="site-reviews__title">Поднимает настроение</h3>
             <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -57,9 +61,11 @@
             <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <h3>Эффект на 24 часа!</h3>
-        <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-        <a class="site-reviews__link" href="#">Узнать больше об исследовании</a>
+        <div class="container site-reviews__veriables-text container">
+          <h3>Эффект на 24 часа!</h3>
+          <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="site-reviews__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
       <div class="site-reviews__wrapper slider container">
         <ul class="site-reviews__list slider__list">
@@ -171,20 +177,28 @@
   <img src="http://placehold.it/150x100" alt="Карта">
 </div>
 <a href="#" class="site-footer__logo">
-  <img src="http://placehold.it/150x100" class="site-footer__logo-image" alt="Логотип">
+  <img src="img/logo-pink-blue-mobile.svg" class="site-footer__logo-image" alt="Логотип">
 </a>
 <ul class="social-list">
   <li class="social-list__item">
-    <a href="#"></a>
+    <a href="#">
+      <img src="img/icon-twitter.svg">
+    </a>
   </li>
   <li class="social-list__item">
-    <a href="#"></a>
+    <a href="#">
+      <img src="img/icon-facebook.svg">
+    </a>
   </li>
   <li class="social-list__item">
-    <a href="#"></a>
+    <a href="#">
+      <img src="img/icon-youtube.svg">
+    </a>
   </li>
 </ul>
-<p>Разработано<a href="https://htmlacademy.ru/"></a></p>
+<p class="footer__development">Разработано<a href="https://htmlacademy.ru/">
+  <img src="img/logo-htmlacademy.svg">
+</a></p>
 </footer>
 </body>
 </html>
