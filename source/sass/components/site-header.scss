@@ -1,10 +1,12 @@
 .site-header {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: $primary-dark;
   color: $white;
   position: relative;
+  padding-bottom: 35px;
 }
 
 .site-header__info {
@@ -12,10 +14,6 @@
   background-repeat: no-repeat;
   background-position: 50% 20%;
   padding-top: 424px;
-}
-
-.site-header__os {
-  margin: 0;
 }
 
 .site-header__preview {
@@ -31,6 +29,8 @@
 @media (min-width: $tablet-width) {
   .site-header {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-position: 50% 100%;
   }
 
   .site-header__preview {
