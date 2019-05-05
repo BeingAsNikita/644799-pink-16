@@ -1,9 +1,15 @@
 .site-footer {
   padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+.site-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--none {
+    display: none;
+  }
 }
 
 .social-list {
@@ -23,10 +29,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-footer {
+  .site-footer__wrapper {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 36px;
+
+    &--none {
+      display: flex;
+    }
   }
 }
 

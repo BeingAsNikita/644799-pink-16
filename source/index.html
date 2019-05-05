@@ -10,12 +10,15 @@
     <header class="site-header">
       <div class="site-header__nav-wrapper">
         <div class="site-header__container">
-          <a href="index.html" class="site-header__logo-link">
-            <img src="img/logo-pink-white-mobile.svg" class="site-header__logo-image" alt="Логотип">
-          </a>
-          <nav class="site-nav">
+          <div class="site-header__logo-wrapper">
+            <a href="index.html" class="site-header__logo-link">
+              <img src="img/logo-pink-white-mobile.svg" class="site-header__logo-image" alt="Логотип">
+            </a>
+          </div>
+          <nav class="site-nav site-nav--closed">
+            <button class="site-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span></button>
             <div class="site-nav__wrapper">
-              <button class="site-nav__toggle" type="button">Бургер</button>
               <ul class="site-nav__list">
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фотографии</a></li>
@@ -23,20 +26,22 @@
                 <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
               </ul>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
-      <h1 class="visually-hidden">Развлекательное приложение Пинк</h1>
-      <div class="site-header__info container">
-        <p>Взгляни на жизнь иначе!</p>
-        <button class="button button--download" type="button">Скачать приложение
-        </button>
-        <ul class="os-list">
-          <li class="os-list__item"><a href="#"><img src="img/logo-apple.svg" alt="ios"></a></li>
-          <li class="os-list__item"> <a href="#"> <img src="img/logo-android.svg" alt="android"></a></li>
-          <li class="os-list__item"><a href="#"> <img src="img/logo-microsoft.svg" alt="windows"></a></li>
-        </ul>
-        <p class="site-header__os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="site-info container">
+        <h1 class="visually-hidden">Развлекательное приложение Пинк</h1>
+        <div>
+          <p class="site-info__text">Взгляните на жизнь иначе!</p>
+          <a href="#" class="button button--download">Скачать приложение
+          </a>
+          <ul class="site-info__os-list">
+            <li class="os-list__item"><a href="#"><img src="img/logo-apple.svg" alt="ios"></a></li>
+            <li class="os-list__item"> <a href="#"> <img src="img/logo-android.svg" alt="android"></a></li>
+            <li class="os-list__item"><a href="#"> <img src="img/logo-microsoft.svg" alt="windows"></a></li>
+          </ul>
+          <p class="site-info__os">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </header>
     <section class="site-reviews">
@@ -176,29 +181,31 @@
 <div class="footer-map">
   <img src="http://placehold.it/150x100" alt="Карта">
 </div>
-<a href="#" class="site-footer__logo">
-  <img src="img/logo-pink-blue-mobile.svg" class="site-footer__logo-image" alt="Логотип">
-</a>
-<ul class="social-list">
-  <li class="social-list__item">
-    <a href="#">
-      <img src="img/icon-twitter.svg">
-    </a>
-  </li>
-  <li class="social-list__item">
-    <a href="#">
-      <img src="img/icon-facebook.svg">
-    </a>
-  </li>
-  <li class="social-list__item">
-    <a href="#">
-      <img src="img/icon-youtube.svg">
-    </a>
-  </li>
-</ul>
-<p class="footer__development">Разработано<a href="https://htmlacademy.ru/">
-  <img src="img/logo-htmlacademy.svg">
-</a></p>
+<div class="site-footer__wrapper site-footer__wrapper--none">
+  <a href="#" class="site-footer__logo">
+    <img src="img/logo-pink-blue-mobile.svg" class="site-footer__logo-image" alt="Логотип">
+  </a>
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a href="#">
+        <img src="img/icon-twitter.svg">
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a href="#">
+        <img src="img/icon-facebook.svg">
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a href="#">
+        <img src="img/icon-youtube.svg">
+      </a>
+    </li>
+  </ul>
+  <p class="footer__development">Разработано<a href="https://htmlacademy.ru/">
+    <img src="img/logo-htmlacademy.svg">
+  </a></p>
+</div>
 </footer>
 </body>
 </html>

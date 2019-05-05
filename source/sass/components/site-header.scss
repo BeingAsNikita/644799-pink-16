@@ -1,17 +1,30 @@
 .site-header {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-size: 255px, 100%;
+  background-position: 0 40%, 50% 0;
+  background-repeat: no-repeat, no-repeat;
   background-color: $primary-dark;
   color: $white;
   position: relative;
+  min-height: 735px;
 }
 
-.site-header__info {
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  padding-top: 424px;
+.site-header__nav-wrapper {
+  background-color: rgba($black, 0.4);
+}
+
+.site-header__container {
+  position: relative;
+}
+
+.site-header__logo-wrapper {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-header__logo-link {
+  margin-left: 20px;
 }
 
 .site-header__os {
@@ -30,7 +43,13 @@
 
 @media (min-width: $tablet-width) {
   .site-header {
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background: url("../../img/iphone-hand-tablet@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 700px, cover;
+    background-position: 50% 100%, 50% 0;
+    background-repeat: no-repeat, no-repeat;
+    background-color: $primary-dark;
+    min-height: 728px;
   }
 
   .site-header__preview {
@@ -44,10 +63,14 @@
 
 @media (min-width: $desktop-width) {
   .site-header {
-    width: 100%;
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background: url("../../img/iphone-hand-desktop@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-size: 1050px, cover;
+    background-position: 50% 100%, 50% 0;
+    background-repeat: no-repeat, no-repeat;
+    background-color: $primary-dark;
+    min-height: 850px;
   }
-
 
   .site-header__nav-wrapper {
     background-color: rgba($black, 0.4);
@@ -55,7 +78,6 @@
 
   .site-header__container {
     width: 960px;
-    min-height: 110px;
     margin: 0 auto;
     display: flex;
     align-items: center;
