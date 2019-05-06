@@ -1,6 +1,5 @@
 .site-info {
-  position: absolute;
-  top: 63%;
+  margin-top: 396px;
   padding-top: 28px;
   background-color: $primary-dark;
 }
@@ -20,7 +19,6 @@
 .site-info__os {
   margin: 0;
   text-align: center;
-  padding-bottom: 30px;
   padding-top: 30px;
   color: $white;
 }
@@ -28,7 +26,7 @@
 @media (min-width: $tablet-width) {
   .site-info {
     width: 50%;
-    top: 21%;
+    margin-top: 80px;
     background-color: rgba($white, 0);
     justify-content: space-between;
     height: 100%;
