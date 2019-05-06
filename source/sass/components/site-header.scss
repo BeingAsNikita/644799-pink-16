@@ -19,8 +19,12 @@
 }
 
 .site-header__logo-wrapper {
-  padding-top: 22px;
+  padding-top: 15px;
   padding-bottom: 22px;
+}
+
+.site-heder__logo-image {
+  margin-left: -80px;
 }
 
 .site-header__logo-link {
@@ -50,6 +54,10 @@
     background-repeat: no-repeat, no-repeat;
     background-color: $primary-dark;
     min-height: 728px;
+  }
+
+  .site-heder__logo-image {
+    margin-left: 0;
   }
 
   .site-header__preview {
