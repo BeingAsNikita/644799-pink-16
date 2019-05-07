@@ -1,6 +1,6 @@
 
 .site-reviews {
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .site-reviews__field {
@@ -16,6 +16,17 @@
   margin-top: 0;
 }
 
+.site-reviews__h-item {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.site-reviews__text {
+  line-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
 .site-reviews__link {
   color: $accent;
   text-decoration: underline;
@@ -29,7 +40,23 @@
 
 .site-reviews__item {
   text-align: center;
-  padding: 14px;
+}
+
+.site-reviews__item--last {
+  padding-bottom: 300px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    position: absolute;
+    bottom: -39px;
+    left: 62px;
+
+    width: 157px;
+    height: 320px;
+  }
 }
 
 .site-reviews__title {
@@ -49,11 +76,30 @@
   font-weight: bold;
 }
 
-.site-reviews__text {
-  line-height: 30px;
-}
-
 @media (min-width: $tablet-width) {
+  .site-reviews {
+    padding-top: 50px;
+  }
+
+  .site-reviews__feild {
+    margin-top: 100px;
+  }
+
+  .site-reviews__h-item {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 0;
+
+    &--last {
+      margin: 0 auto;
+      width: 335px;
+    }
+  }
+
+  .site-reviews__list {
+    margin-left: auto;
+  }
+
   .site-reviews__veriables-text {
     display: block;
   }
