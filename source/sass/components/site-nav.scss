@@ -12,42 +12,16 @@
   border: none;
   width: 90px;
   height: 66px;
-  background-color: rgba($black, 0);
   position: absolute;
   right: 0;
-  top: -70px;
+  top: 50%;
+  transform: translateY(-110%);
+  background: url("../../img/icon-menu-burger.svg") no-repeat center center;
+  transition: all ease 0.5s;
 
-  &::before {
-    content: "";
-
-    position: absolute;
-    left: 34px;
-    top: 19px;
-
-    width: 36px;
-    height: 4px;
-
-    background-color: $white;
-    box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+  &--open {
+    background: url("../../img/icon-menu-cross.svg") no-repeat center center;
   }
-}
-
-.site-nav--closed .site-nav__list {
-  display: none;
-}
-
-.site-nav--closed .site-nav__toggle::before {
-  content: "";
-
-  position: absolute;
-  top: 19px;
-  left: 34px;
-
-  width: 36px;
-  height: 4px;
-
-  background-color: $white;
-  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
 }
 
 .site-nav__wrapper {
@@ -56,8 +30,17 @@
   top: 0;
   left: 0;
   right: 0;
-  opacity: 0;
-  visibility: hidden;
+  transition: all ease 0.5s;
+
+  &--nojs {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--close {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .site-nav__list {
