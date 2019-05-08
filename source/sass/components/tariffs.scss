@@ -13,6 +13,10 @@
 .tariffs-table__wrapper {
   width: 280px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
 }
 
 .tariffs-table__title {

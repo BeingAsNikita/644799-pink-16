@@ -1,11 +1,21 @@
 .site-info {
   margin-top: 396px;
   padding-top: 28px;
+  padding-bottom: 30px;
   background-color: $primary-dark;
 }
 
 .site-info__container {
+  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .site-info__text {

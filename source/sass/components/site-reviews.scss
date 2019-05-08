@@ -4,27 +4,66 @@
 }
 
 .site-reviews__field {
+  overflow: hidden;
+
   &--grey {
     background-color: $primary-ligth;
   }
+
+  @media (min-width: $tablet-width) {
+    overflow: visible;
+  }
 }
 
-.site-reviews__h {
+.site-reviews__section-title {
   font-size: 24px;
   text-align: center;
   font-weight: 300;
   margin-top: 0;
 }
 
-.site-reviews__h-item {
+.site-reviews__title-item {
   display: block;
   margin-bottom: 30px;
 }
 
+.site-reviews__author-name {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.site-reviews__info {
+  display: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 3;
+  }
+}
+
 .site-reviews__text {
   line-height: 30px;
-  padding: 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    line-height: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .site-reviews__link {
@@ -32,20 +71,41 @@
   text-decoration: underline;
 }
 
+.site-reviews__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+}
+
 .site-reviews__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    width: 53%;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .site-reviews__item {
   text-align: center;
 }
 
-.site-reviews__item--last {
+.site-reviews__item--friends {
   padding-bottom: 300px;
   position: relative;
-  overflow: hidden;
 
   &::after {
     content: "";
@@ -64,16 +124,20 @@
   line-height: 10px;
   font-weight: 700;
   margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 .site-reviews__veriables-text {
   display: none;
-}
-
-.site-reviews__author-name {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,10 +149,14 @@
     margin-top: 100px;
   }
 
-  .site-reviews__h-item {
+  .site-reviews__section-title {
+    margin-bottom: 100px;
+  }
+
+  .site-reviews__title-item {
     font-size: 40px;
-    line-height: 45px;
-    margin-bottom: 0;
+    line-height: 50px;
+    margin-bottom: 15px;
 
     &--last {
       margin: 0 auto;
@@ -96,8 +164,20 @@
     }
   }
 
-  .site-reviews__list {
-    margin-left: auto;
+  .site-reviews__item--friends {
+    position: relative;
+    padding-bottom: 30px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+      position: absolute;
+      bottom: 0;
+      margin-left: -78px;
+      left: -75%;
+      width: 268px;
+      height: 480px;
+    }
   }
 
   .site-reviews__veriables-text {
@@ -108,6 +188,7 @@
 @media (min-width: $desktop-width) {
   .site-reviews__list {
     flex-direction: row;
+    padding-top: 260px;
   }
 
   .site-reviews__item {
@@ -116,5 +197,56 @@
 
   .site-reviews__veriables-text {
     display: block;
+  }
+
+  .site-reviews__item--mood {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -340px;
+      margin-left: -146px;
+      width: 292px;
+      height: 302px;
+    }
+  }
+
+  .site-reviews__item--changes {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -340px;
+      margin-left: -146px;
+      width: 292px;
+      height: 302px;
+    }
+  }
+
+  .site-reviews__item--friends {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &::after {
+      content: "";
+      background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -340px;
+      margin-left: 146px;
+      left: -50%;
+      width: 292px;
+      height: 302px;
+    }
   }
 }
