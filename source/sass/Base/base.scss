@@ -17,6 +17,11 @@ body {
   color: $primary-dark;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -58,7 +58,6 @@
 
 .site-nav__link {
   display: block;
-  width: 100%;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -94,7 +93,19 @@
   }
 
   .site-nav__link {
-    padding: 0;
+    padding: 8px;
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:active {
+      color: rgba($primary-ligth, 0.5);
+    }
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 
   .site-nav__toggle {

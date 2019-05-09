@@ -52,8 +52,8 @@
             <button class="site-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span></button>
             <div class="site-nav__wrapper site-nav__wrapper--nojs">
-              <ul class="site-nav__list">
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+              <ul class="site-nav__list site-nav__list--close">
+                <li class="site-nav__item"><a class="site-nav__link site-nav__link--active">Главная</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фотографии</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="form.html">Конкурс</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
@@ -136,9 +136,9 @@
         </li>
       </ul>
       <button class="slider__prev button" type="button">
-        <span class="visually-hidden">Предыдущий отзыв</span></button>
+      <span class="visually-hidden">Предыдущий отзыв</span></button>
       <button class="slider__next button" type="button">
-        <span class="visually-hidden">Следующий отзыв</span></button>
+      <span class="visually-hidden">Следующий отзыв</span></button>
       <div class="slider__toggle-list">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
@@ -215,24 +215,24 @@
       </div>
     </div>
   </section>
-  <footer class="site-footer container">
-    <h2>Остались вопросы?<br>
-    Свяжитесь с нами!</h2>
-    <div class="contacts">
+  <footer class="site-footer">
+    <div class="contacts container">
+      <h2 class="contacts__title">Остались вопросы?<br>
+      Свяжитесь с нами!</h2>
       <ul class="contacts__list">
-        <li><p>Звоните:</p>
-        <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <li class="contacts__item"><p class="contacts__text">Звоните:</p>
+        <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </li>
-      <li><p>Приезжайте в гости:</p>
-      <p>ул.Большая Конюшенная, 19/8</p>
+      <li class="contacts__item"><p class="contacts__text">Приезжайте в гости:</p>
+      <p class="contacts__link">ул.Большая Конюшенная, 19/8</p>
     </li>
-    <li><p>Пишите:</p>
-    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    <li class="contacts__item contacts__item--last"><p class="contacts__text">Пишите:</p>
+    <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   </li>
 </ul>
 </div>
-<div class="footer-map">
-<img src="http://placehold.it/150x100" alt="Карта">
+<div class="site-footer__map">
+<img src="#" alt="Карта">
 </div>
 <div class="site-footer__wrapper site-footer__wrapper--none">
 <a href="#" class="site-footer__logo">

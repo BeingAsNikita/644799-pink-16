@@ -10,7 +10,13 @@
 }
 
 .site-header__nav-wrapper {
-  background-color: $primary-dark;
+  background-color: rgba($black, 0.4);
+  transition: all ease 0.5s;
+
+  &--close {
+    background-color: $primary-dark;
+    border-bottom: 1px solid $black;
+  }
 }
 
 .site-header__container {
