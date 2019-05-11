@@ -1,9 +1,8 @@
 .site-header {
-  padding-bottom: 30px;
-  background: url("../../img/iphone-hand-mobile@1x.png"),
+  background-image: url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-size: 255px, 100%;
-  background-position: 0 40%, 50% 0;
+  background-position: 50% 43%, 50% 0;
   background-repeat: no-repeat, no-repeat;
   background-color: $primary-dark;
   color: $white;
@@ -12,6 +11,12 @@
 
 .site-header__nav-wrapper {
   background-color: rgba($black, 0.4);
+  transition: all ease 0.5s;
+
+  &--close {
+    background-color: $primary-dark;
+    border-bottom: 1px solid $black;
+  }
 }
 
 .site-header__container {
@@ -47,11 +52,10 @@
 
 @media (min-width: $tablet-width) {
   .site-header {
-    background: url("../../img/iphone-hand-tablet@1x.png"),
+    background-image: url("../../img/iphone-hand-tablet@1x.png"),
       url("../../img/bg-back-tablet@1x.jpg");
     background-size: 700px, cover;
     background-position: 50% 100%, 50% 0;
-    background-repeat: no-repeat, no-repeat;
     background-color: $primary-dark;
     min-height: 728px;
   }
