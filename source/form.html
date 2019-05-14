@@ -12,7 +12,7 @@
         <div class="site-header__container">
           <div class="site-header__logo-wrapper">
             <a href="index.html" class="site-header__logo-link">
-              <svg class="site-heder__logo-image" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+              <svg class="site-header__logo-image" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g class = "logo-word">
                   <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                   <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -64,98 +64,117 @@
       </div>
       <h1 class="site-header__preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
-    <section class="page-form  container">
-      <p class="page-form__preview">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+    <section class="page-form">
+      <p class="page-form__preview container">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните <span class="page-form__preview-hidden">форму ниже:</span>
       </p>
       <form action="https://echo.htmlacademy.ru" method="post" class="page-form__form site-form">
-        <fieldset class="site-form__field">
+        <div class="site-form__info">
+        <fieldset class="site-form__field site-form__field--info">
           <label class="site-form__label">
-            <span>Фамилия:</span>
-            <input type="text" name="secondName" class="site-form__input" placeholder="Укажите фамилию*">
+            <span class="site-form__label-name">Фамилия:</span>
+            <input type="text" name="secondName" class="site-form__input" placeholder="Укажите фамилию *">
           </label>
           <label class="site-form__label">
-            <span>Имя:</span>
-            <input type="text" name="Name" class="site-form__input" placeholder=" Введите ваше имя*"></label>
+            <span class="site-form__label-name">Имя:</span>
+            <input type="text" name="Name" class="site-form__input" placeholder=" Введите ваше имя *"></label>
             <label class="site-form__label">
-              <span>Отчество:</span>
+              <span class="site-form__label-name">Отчество:</span>
               <input type="text" name="fathersName" class="site-form__input"
-              placeholder="Ну и отчестов тоже">
+              placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
-          <fieldset class="site-form__field site-form__field--grey">
-            <legend class="site-form__legend">
+          </div>
+          <div class="site-form__achievements">
+          <fieldset class="site-form__field site-form__field--border site-form__field--grey">
+            <legend class="site-form__legend site-form__legend--achievements">
               Ваши безбашенные достижения в путешествии
             </legend>
-            <ul class="site-form__list ">
+            <ul class="site-form__list">
               <li class="site-form__item">
-                <input type="checkbox" name="selfi" id="selfi" checked>
-                <label for="selfi">Сделал селфи с акулой</label>
+                <input class="visually-hidden" type="checkbox" name="selfi" id="selfi" checked>
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="selfi">Сделал селфи с акулой</label>
               </li>
               <li class="site-form__item">
-                <input class="site-form__checkbox" type="checkbox" name="burned" id="burned" checked>
-                <label for="burned">Оборел на пляже</label>
+                <input class="visually-hidden" type="checkbox" name="burned" id="burned" checked>
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="burned">Оборел на пляже</label>
               </li>
               <li class="site-form__item">
-                <input class="site-form__checkbox" type="checkbox" name="Chuck" id="Chuck">
-                <label for="Chuck">Видел Чака Норриса</label>
+                <input class="visually-hidden" type="checkbox" name="Chuck" id="Chuck">
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="Chuck">Видел Чака Норриса</label>
               </li>
               <li class="site-form__item">
-                <input class="site-form__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-                <label for="souvenirs">Накупил сувениров</label>
+                <input class="visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="site-form__item">
-                <input class="site-form__checkbox" type="checkbox" name="tower" id="tower" checked>
-                <label for="tower">Удeржал башню</label>
+                <input class="visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="tower">Удeржал башню</label>
               </li>
               <li class="site-form__item">
-                <input class="site-form__checkbox" type="checkbox" name="crash" id="crash">
-                <label for="crash">Разгромил отель</label>
+                <input class="visually-hidden" type="checkbox" name="crash" id="crash">
+                <span class="site-form__checkbox"></span>
+                <label class="site-form__item-label" for="crash">Разгромил отель</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="site-form__field">
-            <legend class="site-form__legend">
+          </div>
+          <div class="site-form__contacts">
+          <fieldset class="site-form__field site-form__field--border">
+            <legend class="site-form__legend site-form__legend--contacts">
               Контактная информация
             </legend>
-            <label class="site-form__label">
-              <span>Номер телефона:</span>
-              <input type="text" name="secondName" class="site-form__input" placeholder="Номер, пожалуйста">
+            <label class="site-form__label site-form__label--contacts">
+              <span class="site-form__label-name site-form__label-contact">Номер телефона</span>
+              <input type="text" name="phoneNumber" class="site-form__input site-form__input-phone" placeholder="Номер, пожалуйста">
             </label>
-            <label class="site-form__label">
-              <span>Адрес почты:</span>
-              <input type="text" name="secondName" class="site-form__input" placeholder="Введите почту*">
+            <label class="site-form__label site-form__label--contacts">
+              <span class="site-form__label-name site-form__label-contact">Адрес почты</span>
+              <input type="text" name="mail" class="site-form__input site-form__input-mail" placeholder="Введите почту *">
             </label>
           </fieldset>
-          <fieldset class="site-form__field site-form__field--grey">
-            <legend class="site-form__legend">
+          </div>
+          <div class="site-form__os">
+          <fieldset class="site-form__field site-form__field--border site-form__field--grey">
+            <legend class="site-form__legend site-form__legend--os">
               С каким приложением путешествовали?
             </legend>
             <ul class="site-form__list">
               <li class="site-form__item">
-                <input type="radio" name="iOS" id="iOS" checked>
-                <label for="iOS">Pink для iOS</label>
+                <input class="visually-hidden" type="radio" name="OS" id="iOS" checked>
+                <span class="site-form__radio"></span>
+                <label class="site-form__item-label" for="iOS">Pink для iOS</label>
               </li>
               <li class="site-form__item">
-                <input type="radio" name="Android" id="Android">
-                <label for="Android">Pink на Android</label>
+                <input class="visually-hidden" type="radio" name="OS" id="Android">
+                <span class="site-form__radio"></span>
+                <label class="site-form__item-label" for="Android">Pink на Android</label>
               </li>
               <li class="site-form__item">
-                <input type="radio" name="WindowsPhone" id="WindowsPhone">
-                <label for="WindowsPhone">WindowsPhone</label>
+                <input class="visually-hidden" type="radio" name="OS" id="WindowsPhone">
+                <span class="site-form__radio"></span>
+                <label class="site-form__item-label" for="WindowsPhone">WindowsPhone</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="site-form__field">
-            <legend class="site-form__legend">
+          </div>
+          <div class="site-form__review">
+          <fieldset class="site-form__field site-form__field--textarea site-form__field--border">
+            <legend class="site-form__legend site-form__legend--review">
               Опишите свои эмоции
             </legend>
-            <textarea>
-            Можно прям в красках, не стесняясь в выражениях
-            </textarea>
+            <textarea class="site-form__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
-          <input type="submit" class="button site-form__button">
-          <p><sup>*</sup> - обязательные поля</p>
+          </div>
+          <div class="site-form__button">
+          <input type="submit" class="button button--submit" value="Отправить форму">
+          <p class="site-form__important"><sup>*</sup> - обязательные поля</p>
+          </div>
         </form>
       </section>
       <footer class="site-footer container">
