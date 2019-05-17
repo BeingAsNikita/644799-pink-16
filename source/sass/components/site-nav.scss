@@ -30,7 +30,6 @@
   top: 0;
   left: 0;
   right: 0;
-  transition: all ease 0.5s;
 
   &--nojs {
     opacity: 1;
@@ -94,6 +93,7 @@
 
   .site-nav__link {
     padding: 8px;
+    display: inline-block;
 
     &:hover {
       color: $accent;

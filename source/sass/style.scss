@@ -1,9 +1,9 @@
-@import "base/variables.scss";
-@import "base/normalize.scss";
-@import "base/visually-hidden.scss";
-@import "base/fonts.scss";
-@import "base/base.scss";
-@import "base/container.scss";
+@import "primary/variables.scss";
+@import "primary/normalize.scss";
+@import "primary/visually-hidden.scss";
+@import "primary/fonts.scss";
+@import "primary/base.scss";
+@import "primary/container.scss";
 @import "components/button.scss";
 @import "components/site-header.scss";
 @import "components/logo.scss";
@@ -17,4 +17,4 @@
 @import "components/tariffs.scss";
 @import "components/site-footer.scss";
 @import "components/contacts.scss";
-@import "components/page-form.scss";
+@import "components/site-form.scss";

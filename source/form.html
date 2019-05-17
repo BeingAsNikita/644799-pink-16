@@ -55,7 +55,7 @@
               <ul class="site-nav__list site-nav__list--close">
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="photo.html">Фотографии</a></li>
-                <li class="site-nav__item site-nav__item--active"><a class="site-nav__link">Конкурс</a></li>
+                <li class="site-nav__item"><a class="site-nav__link site-nav__link--active">Конкурс</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
               </ul>
             </div>
@@ -64,29 +64,29 @@
       </div>
       <h1 class="site-header__preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
-    <section class="page-form">
-      <p class="page-form__preview container">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните <span class="page-form__preview-hidden">форму ниже:</span>
+    <section class="site-form">
+      <p class="site-form__preview container">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните <span class="site-form__preview-hidden">форму ниже:</span>
       </p>
-      <form action="https://echo.htmlacademy.ru" method="post" class="page-form__form site-form">
+      <form action="https://echo.htmlacademy.ru" method="post" class="site-form__form site-form">
         <div class="site-form__info">
         <fieldset class="site-form__field site-form__field--info">
           <label class="site-form__label">
             <span class="site-form__label-name">Фамилия:</span>
-            <input type="text" name="secondName" class="site-form__input" placeholder="Укажите фамилию *">
+            <input type="text" name="secondName" class="site-form__input" placeholder="Укажите фамилию *" required>
           </label>
           <label class="site-form__label">
             <span class="site-form__label-name">Имя:</span>
-            <input type="text" name="Name" class="site-form__input" placeholder=" Введите ваше имя *"></label>
-            <label class="site-form__label">
+            <input type="text" name="Name" class="site-form__input" placeholder=" Введите ваше имя *" required></label>
+            <label class="site-form__label site-form__label--last">
               <span class="site-form__label-name">Отчество:</span>
               <input type="text" name="fathersName" class="site-form__input"
               placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
           </div>
-          <div class="site-form__achievements">
-          <fieldset class="site-form__field site-form__field--border site-form__field--grey">
+          <div class="site-form__achievements site-form__achievements--grey">
+          <fieldset class="site-form__field site-form__field--border">
             <legend class="site-form__legend site-form__legend--achievements">
               Ваши безбашенные достижения в путешествии
             </legend>
@@ -130,17 +130,17 @@
               Контактная информация
             </legend>
             <label class="site-form__label site-form__label--contacts">
-              <span class="site-form__label-name site-form__label-contact">Номер телефона</span>
+              <span class="site-form__label-name site-form__label-name--contact">Номер телефона</span>
               <input type="text" name="phoneNumber" class="site-form__input site-form__input-phone" placeholder="Номер, пожалуйста">
             </label>
             <label class="site-form__label site-form__label--contacts">
-              <span class="site-form__label-name site-form__label-contact">Адрес почты</span>
+              <span class="site-form__label-name site-form__label-name--contact">Адрес почты</span>
               <input type="text" name="mail" class="site-form__input site-form__input-mail" placeholder="Введите почту *">
             </label>
           </fieldset>
           </div>
-          <div class="site-form__os">
-          <fieldset class="site-form__field site-form__field--border site-form__field--grey">
+          <div class="site-form__os site-form__os--grey">
+          <fieldset class="site-form__field site-form__field--border">
             <legend class="site-form__legend site-form__legend--os">
               С каким приложением путешествовали?
             </legend>

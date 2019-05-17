@@ -68,6 +68,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
+
+    @media (min-width: $desktop-width) {
+      width: 950px;
+    }
   }
 
   .site-photos__item {
@@ -84,9 +88,11 @@
   .site-photos__list-container {
     margin: 0 auto;
     width: 960px;
+    padding-top: 50px;
   }
 
   .site-photos__item {
+    width: 33%;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;

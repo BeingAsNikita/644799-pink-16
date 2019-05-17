@@ -54,7 +54,7 @@
             <div class="site-nav__wrapper site-nav__wrapper--nojs">
               <ul class="site-nav__list site-nav__list--close">
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
-                <li class="site-nav__item"><a class="site-nav__link">Фотографии</a></li>
+                <li class="site-nav__item"><a class="site-nav__link site-nav__link--active">Фотографии</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="form.html">Конкурс</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
               </ul>
@@ -70,7 +70,11 @@
         Видите, как не хватает ваших?</p>
         <div class="site-photos__panorama">
           <div class="panorama__container">
-            <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="site-photos__panorama-image">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+              <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="site-photos__panorama-image" srcset="img/panorama-mobile@2x.jpg" alt="Панорама дня">
+            </picture>
           </div>
           <div class="container">
             <div class="comment">
@@ -86,7 +90,11 @@
         <div class="site-photos__list-container container">
           <ul class="site-photos__list">
             <li class="site-photos__item">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
+                <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-car-mobile@2x.jpg" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Левон</span>
@@ -97,7 +105,11 @@
               </div>
             </li>
             <li class="site-photos__item">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
+                <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-drumset-mobile@2x.jpg" class="site-photos__img" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Антон</span>
@@ -108,7 +120,11 @@
               </div>
             </li>
             <li class="site-photos__item">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
+                <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-window-mobile@2x.jpg" class="site-photos__img" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Борис</span>
@@ -119,7 +135,11 @@
               </div>
             </li>
             <li class="site-photos__item">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
+                <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-fair-mobile@2x.jpg" class="site-photos__img" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Сергей</span>
@@ -130,7 +150,11 @@
               </div>
             </li>
             <li class="site-photos__item">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
+                <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-pov-mobile@2x.jpg" class="site-photos__img" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Максим</span>
@@ -141,7 +165,11 @@
               </div>
             </li>
             <li class="site-photos__item">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" class="site-photos__img">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
+                <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" srcset="img/photo-wing-mobile@2x.jpg" class="site-photos__img" class="site-photos__img">
+              </picture>
               <div class="comment">
                 <div class="comment__author-container">
                   <span class="comment__author">Надежда</span>

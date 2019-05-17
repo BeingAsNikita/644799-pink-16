@@ -6,7 +6,6 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
-  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 31px;
@@ -16,16 +15,45 @@
 
 .contacts__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .contacts__item {
-  width: 50%;
+  width: 100%;
 
-  &--last {
-    margin: 0 auto;
+  &--tel {
+    order: 0;
+  }
+
+  &--address {
+    order: 2;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+    }
+  }
+
+  &--mail {
+    order: 1;
+
+    @media (min-width: $desktop-width) {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
   }
 
   @media (min-width: $desktop-width) {
