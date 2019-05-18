@@ -1,16 +1,17 @@
 .site-info {
-  margin-top: 396px;
-  padding-top: 28px;
+  padding-top: 20px;
   padding-bottom: 30px;
   background-color: $primary-dark;
 }
 
 .site-info__container {
+  padding-top: 400px;
   width: 100%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 660px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +43,6 @@
 @media (min-width: $tablet-width) {
   .site-info {
     width: 50%;
-    margin-top: 80px;
     background-color: rgba($white, 0);
     justify-content: space-between;
     height: 100%;

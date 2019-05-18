@@ -4,7 +4,9 @@
 }
 
 .site-reviews__field {
+  position: relative;
   overflow: hidden;
+  padding-top: 60px;
 
   &--grey {
     background-color: $primary-ligth;
@@ -109,7 +111,7 @@
     margin: 0 auto;
     width: 960px;
     flex-direction: row;
-    padding-top: 260px;
+    padding-top: 280px;
   }
 }
 
