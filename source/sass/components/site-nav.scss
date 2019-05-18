@@ -14,7 +14,7 @@
   height: 66px;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(-110%);
   background: url("../../img/icon-menu-burger.svg") no-repeat center center;
   transition: all ease 0.5s;
@@ -26,20 +26,13 @@
 
 .site-nav__wrapper {
   background-color: $primary-dark;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: all ease 0.5s;
 
   &--nojs {
-    opacity: 1;
-    visibility: visible;
+    display: block;
   }
 
   &--close {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -73,6 +66,7 @@
   }
 
   .site-nav__wrapper {
+    display: block;
     width: 100%;
     position: relative;
     background-color: rgba($primary-dark, 0);
@@ -94,6 +88,7 @@
 
   .site-nav__link {
     padding: 8px;
+    display: inline-block;
 
     &:hover {
       color: $accent;

@@ -18,9 +18,31 @@
 }
 
 .comment__like {
+  position: relative;
   margin-top: auto;
   color: $accent;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 24px;
+  padding-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    content: "";
+    width: 14px;
+    height: 12px;
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: 95%;
+    }
+  }
 }

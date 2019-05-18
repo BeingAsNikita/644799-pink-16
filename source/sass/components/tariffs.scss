@@ -1,7 +1,17 @@
 .tariffs {
+  position: relative;
+  padding-top: 100px;
+
   &--grey {
     background-color: $primary-ligth;
   }
+}
+
+.polygon {
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  left: 0;
 }
 
 .tariffs-table {
@@ -15,7 +25,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    width: 660px;
   }
 }
 
