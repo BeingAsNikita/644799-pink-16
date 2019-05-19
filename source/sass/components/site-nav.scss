@@ -47,6 +47,10 @@
   border-top: 1px solid $grey-lighten;
   border-bottom: 1px solid $black;
   font-weight: 700;
+
+  &--last {
+    border-bottom: none;
+  }
 }
 
 .site-nav__link {

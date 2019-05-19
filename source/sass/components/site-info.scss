@@ -5,6 +5,7 @@
 }
 
 .site-info__container {
+  position: relative;
   padding-top: 400px;
   width: 100%;
   margin: 0 auto;
@@ -17,6 +18,11 @@
   @media (min-width: $desktop-width) {
     width: 960px;
   }
+}
+
+.site-info__image {
+  position: absolute;
+  z-index: 1;
 }
 
 .site-info__text {
