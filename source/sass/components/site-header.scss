@@ -2,13 +2,18 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-color: $primary-dark;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 50% 7%;
   background-repeat: no-repeat;
   color: $white;
-  position: relative;
 
   &--main {
-    background-size: 320px auto;
+    background-image: url("../../img/iphone-hand-mobile@1x.png"),
+      url("../../img/bg-back-mobile@1x.jpg");
+    background-color: $primary-dark;
+    background-size: 320px auto, contain;
+    background-attachment: local, local;
+    background-position: 50% 130px, 50% 7%;
+    background-repeat: no-repeat;
   }
 
   @media (min-resolution: $retina-dpi),
@@ -19,6 +24,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: cover;
+    background-position: 50% 0%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -47,7 +53,6 @@
 
   &--close {
     background-color: $primary-dark;
-    border-bottom: 1px solid $black;
 
     @media (min-width: $tablet-width) {
       background-color: $primary-dark;

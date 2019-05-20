@@ -18,14 +18,27 @@
   margin: 0 auto;
   width: 620px;
   border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .tariffs-table__wrapper {
   width: 280px;
+  margin: 0 auto;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
   }
 }
 
@@ -39,9 +52,31 @@
 }
 
 .tariffs-table__price {
+  position: relative;
   font-size: 14px;
   font-weight: 300;
   margin-top: 0;
+
+  &--hit {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -53px;
+      left: -1px;
+      width: 73px;
+      height: 73px;
+      background-image: url("../../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      transform: rotate(-45deg);
+      top: -40px;
+      left: 12px;
+    }
+  }
 }
 
 .tariffs-table__item {
@@ -60,19 +95,29 @@
 .tariffs-table__item--true::after {
   content: "";
   background-image: url("../../img/icon-yes.svg");
+  background-size: 31px 21px;
   position: absolute;
   top: 13px;
   left: 61px;
-  width: 21px;
-  height: 16px;
+  width: 31px;
+  height: 21px;
+
+  @media (min-width: $desktop-width) {
+    left: 105px;
+  }
 }
 
 .tariffs-table__item--false::after {
   content: "";
   background-image: url("../../img/icon-no.svg");
+  background-repeat: no-repeat;
   position: absolute;
   top: 13px;
   left: 61px;
   width: 27px;
   height: 27px;
+
+  @media (min-width: $desktop-width) {
+    left: 105px;
+  }
 }
