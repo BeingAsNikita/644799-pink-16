@@ -53,18 +53,30 @@
     padding-left: 40px;
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    padding-left: 90px;
+    padding-top: 0;
+  }
 }
 
 .post-photo__settings-list {
-  width: 100%;
+  width: 280px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    max-height: 170px;
     flex-direction: column;
     justify-content: space-between;
-    width: 55px;
+    width: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    max-height: 200px;
   }
 }
 
@@ -80,14 +92,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
   }
 
   svg {
     width: 100%;
     height: auto;
     fill: rgba($primary-dark, 0.3);
+
+    @media (min-width: $tablet-width) {
+      fill: $accent;
+    }
   }
 
   &--active svg {
@@ -96,6 +113,8 @@
 }
 
 .settings__range-list {
+  margin: auto;
+
   @media (min-width: $tablet-width) {
     width: 200px;
     display: flex;
@@ -103,6 +122,10 @@
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
@@ -125,9 +148,27 @@
     margin: 0 auto;
   }
 
-  &--mid {
+  &--fill {
     @media (min-width: $tablet-width) {
-      margin: 105px;
+      margin: 70px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: -41px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba($primary-dark, 0.1);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      left: -115px;
+      bottom: -25px;
     }
   }
 }
@@ -152,6 +193,12 @@
   border-top: 1px solid rgba($primary-dark, 0.1);
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 90px;
     border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 140px;
   }
 }
