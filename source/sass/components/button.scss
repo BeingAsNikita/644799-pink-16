@@ -56,4 +56,39 @@
       width: 300px;
     }
   }
+
+  &--post {
+    margin: 0 auto;
+    margin-bottom: 11px;
+    width: 280px;
+    color: $accent;
+    padding: 12px 30px;
+    border: 3px solid $accent;
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    background-color: $primary-ligth;
+
+    &:hover {
+      background-color: $accent;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &--cancel {
+    border: 3px solid rgba($primary-dark, 0.1);
+    color: rgba($primary-dark, 0.1);
+
+    &:hover {
+      color: rgba($primary-dark, 0.3);
+      background-color: rgba($white, 0);
+    }
+
+    &:active {
+      background-color: rgba($primary-dark, 0.3);
+    }
+  }
 }
