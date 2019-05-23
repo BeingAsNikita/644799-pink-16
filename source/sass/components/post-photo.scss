@@ -1,4 +1,204 @@
+
+.post-photo__wrapper {
+  background-color: $primary-ligth;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    width: 960px;
+  }
+}
+
+
 .post-photo__title {
+  width: 285px;
+  text-align: center;
+  font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+.post-photo__image {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.post-photo__settings {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    padding-left: 90px;
+    padding-top: 0;
+  }
+}
+
+.post-photo__settings-list {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-height: 170px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    max-height: 200px;
+  }
+}
+
+.settings__button {
+  border: none;
+  height: 45px;
+  padding: 0;
+  background-color: rgba($white, 0);
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+    fill: rgba($primary-dark, 0.3);
+
+    @media (min-width: $tablet-width) {
+      fill: $accent;
+    }
+  }
+
+  &--active svg {
+    fill: $accent;
+  }
+}
+
+.settings__range-list {
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.settings__range {
+
+  display: none;
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: $primary-dark;
+  margin: 30px auto;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      margin: 70px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: -41px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba($primary-dark, 0.1);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      left: -115px;
+      bottom: -25px;
+    }
+  }
+}
+
+.settings__range-button {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $accent;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $accent;
+  }
+}
+
+.post-photo__submit-wrapper {
+  padding-top: 38px;
+  border-top: 1px solid rgba($primary-dark, 0.1);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 90px;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 140px;
+  }
 }

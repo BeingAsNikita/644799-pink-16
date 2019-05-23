@@ -110,6 +110,10 @@
 
   @media (min-width: $desktop-width) {
     width: 260px;
+
+    &--odd {
+      order: -1;
+    }
   }
 }
 
