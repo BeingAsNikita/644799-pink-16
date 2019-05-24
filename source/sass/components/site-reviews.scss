@@ -188,12 +188,12 @@
   }
 }
 
-  .site-reviews__item--mood {
-    @media (min-width: $tablet-width) {
-      padding-top: 53px;
-    }
+.site-reviews__item--mood {
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: relative;
     padding-left: 25px;
     padding-right: 25px;
@@ -383,6 +383,4 @@
     width: 60%;
     padding-bottom: 110px;
   }
-
-
 }
