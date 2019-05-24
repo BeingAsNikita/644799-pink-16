@@ -1,6 +1,6 @@
 .tariffs {
   position: relative;
-  padding-top: 100px;
+  padding-top: 88px;
 
   &--grey {
     background-color: $primary-ligth;
@@ -16,22 +16,26 @@
 
 .tariffs-table {
   margin: 0 auto;
-  width: 620px;
+  width: 840px;
   border-collapse: collapse;
+  transform: translateX(-260px);
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
+    transform: translateX(0);
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    width: 940px;
   }
 }
 
 .tariffs-table__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -49,11 +53,13 @@
   border-spacing: 2px 2px;
   border-radius: 5px;
   border: 2px solid $grey-darker;
+  font-size: 18px;
+  margin: 0;
 }
 
 .tariffs-table__price {
   position: relative;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 300;
   margin-top: 0;
 
@@ -75,6 +81,7 @@
       transform: rotate(-45deg);
       top: -40px;
       left: 12px;
+      font-size: 14px;
     }
   }
 }
@@ -84,11 +91,32 @@
   width: 155px;
   background-color: $white;
   border: 2px solid $grey-darker;
-  padding: 12px;
+  padding: 15px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 
   &--first {
     border: none;
     background-color: $primary-ligth;
+  }
+
+  &--title {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: attr(data-label);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -98,9 +126,13 @@
   background-size: 31px 21px;
   position: absolute;
   top: 13px;
-  left: 61px;
+  left: 235px;
   width: 31px;
   height: 21px;
+
+  @media (min-width: $tablet-width) {
+    left: 61px;
+  }
 
   @media (min-width: $desktop-width) {
     left: 105px;
@@ -113,9 +145,13 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 13px;
-  left: 61px;
+  left: 235px;
   width: 27px;
   height: 27px;
+
+  @media (min-width: $tablet-width) {
+    left: 61px;
+  }
 
   @media (min-width: $desktop-width) {
     left: 105px;

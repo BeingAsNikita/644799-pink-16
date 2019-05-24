@@ -31,7 +31,7 @@
 }
 
 .site-info__os {
-  padding-top: 20px;
+  padding-top: 29px;
   padding-bottom: 30px;
   background-color: $primary-dark;
 
@@ -46,7 +46,9 @@
 .site-info__os-list {
   width: 280px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 34px;
+  padding-left: 19px;
+  padding-right: 19px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -61,7 +63,9 @@
   text-align: center;
   width: 280px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $desktop-width) {
     padding-top: 60px;
@@ -69,12 +73,11 @@
 }
 
 .site-info__hand {
-  height: 400px;
+  height: 395px;
   width: 300px;
   background-image: url("../../img/iphone-hand-mobile@1x.png");
-  // background-color: $primary-dark;
-  background-size: auto 300px;
-  background-position: center bottom;
+  background-size: 257px 289px;
+  background-position: 0 107px;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi),
