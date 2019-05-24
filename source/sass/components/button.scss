@@ -24,6 +24,12 @@
     &:active {
       color: rgba($accent, 0.3);
     }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      padding: 12px 45px;
+    }
+
   }
 
   &--submit {

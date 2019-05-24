@@ -75,6 +75,11 @@
 .site-header__logo-wrapper {
   padding-top: 6px;
   padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 27px;
+      padding-bottom: 36px;
+  }
 }
 
 .site-header__logo-image {
@@ -87,6 +92,10 @@
 
 .site-header__logo-link {
   margin-left: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
+  }
 
   @media (min-width: $desktop-width) {
     align-self: center;

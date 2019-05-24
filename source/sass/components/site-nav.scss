@@ -10,14 +10,18 @@
 
 .site-nav__toggle {
   border: none;
-  width: 90px;
-  height: 66px;
+  width: 62px;
+  height: 62px;
   position: absolute;
   right: 0;
   top: 1px;
   transform: translateY(-110%);
   background: url("../../img/icon-menu-burger.svg") no-repeat center center;
   transition: all ease 0.5s;
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(-136%);
+  }
 
   &--open {
     background: url("../../img/icon-menu-cross.svg") no-repeat center center;

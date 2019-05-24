@@ -96,7 +96,7 @@
 
 .slider__toggle-list {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -117,5 +117,13 @@
   &--active {
     border: 3px solid $primary-dark;
     background-color: $white;
+  }
+
+  &:hover {
+    background-color: rgba($primary-dark, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($primary-dark, 0.1);
   }
 }

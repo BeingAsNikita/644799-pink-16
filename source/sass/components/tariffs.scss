@@ -61,7 +61,7 @@
   position: relative;
   font-size: 24px;
   font-weight: 300;
-  margin-top: 0;
+  margin-top: -10px;
 
   &--hit {
     &::before {
@@ -91,7 +91,7 @@
   width: 155px;
   background-color: $white;
   border: 2px solid $grey-darker;
-  padding: 15px;
+  padding: 16px;
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
@@ -125,8 +125,8 @@
   background-image: url("../../img/icon-yes.svg");
   background-size: 31px 21px;
   position: absolute;
-  top: 13px;
-  left: 235px;
+  top: 14px;
+  left: 230px;
   width: 31px;
   height: 21px;
 
@@ -144,8 +144,8 @@
   background-image: url("../../img/icon-no.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 13px;
-  left: 235px;
+  top: 14px;
+  left: 230px;
   width: 27px;
   height: 27px;
 
