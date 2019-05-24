@@ -1,12 +1,13 @@
 
 .site-reviews {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .site-reviews__field {
   position: relative;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 57px;
 
   &--grey {
     background-color: $primary-ligth;
@@ -22,11 +23,12 @@
   text-align: center;
   font-weight: 300;
   margin-top: 0;
+  line-height: 27px;
 }
 
 .site-reviews__title-item {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .site-reviews__author-name {
@@ -52,7 +54,7 @@
 }
 
 .site-reviews__text {
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -69,6 +71,7 @@
 
   &--center {
     text-align: center;
+    line-height: 30px;
   }
 }
 
@@ -85,6 +88,7 @@
   width: 280px;
   margin: 0 auto;
   overflow: hidden;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -130,7 +134,7 @@
     margin-left: -78px;
     left: 50%;
     width: 157px;
-    height: 320px;
+    height: 319px;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
@@ -141,9 +145,9 @@
 
 .site-reviews__title {
   font-size: 18px;
-  line-height: 10px;
+  line-height: 13px;
   font-weight: 700;
-  margin-top: 35px;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     text-align: left;

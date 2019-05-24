@@ -14,7 +14,7 @@
   height: 66px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 1px;
   transform: translateY(-110%);
   background: url("../../img/icon-menu-burger.svg") no-repeat center center;
   transition: all ease 0.5s;
@@ -55,8 +55,8 @@
 
 .site-nav__link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: $desktop-width) {

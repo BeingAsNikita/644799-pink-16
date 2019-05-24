@@ -1,11 +1,13 @@
 .contacts {
   padding-bottom: 60px;
+  padding-top: 44px;
 }
 
 .contacts__title {
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 31px;
