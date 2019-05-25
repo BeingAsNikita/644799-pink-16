@@ -80,7 +80,7 @@
   }
 }
 
-.settings__button {
+.post-photo__settings-button {
   border: none;
   height: 45px;
   padding: 0;
@@ -112,7 +112,7 @@
   }
 }
 
-.settings__range-list {
+.post-photo__range-list {
   margin: auto;
 
   @media (min-width: $tablet-width) {
@@ -129,7 +129,7 @@
   }
 }
 
-.settings__range {
+.post-photo__range {
 
   display: none;
   position: relative;
@@ -173,7 +173,7 @@
   }
 }
 
-.settings__range-button {
+.post-photo__range-button {
   position: absolute;
   top: -6px;
   right: 33px;

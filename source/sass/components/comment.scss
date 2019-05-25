@@ -12,12 +12,20 @@
   font-weight: bold;
 }
 
+.comment__text {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .comment__date {
   font-family: italic;
   color: $primary-dark;
 }
 
 .comment__like {
+  display: flex;
+  align-items: center;
   position: relative;
   margin-top: auto;
   color: $accent;
@@ -25,24 +33,21 @@
   font-size: 12px;
   line-height: 24px;
   padding-left: 32px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
   }
+}
 
-  &::after {
-    position: absolute;
-    left: 0;
-    top: 5px;
-
-    content: "";
-    width: 14px;
-    height: 12px;
-    background-image: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      left: 95%;
-    }
-  }
+.comment__button-like {
+  border: none;
+  margin-left: auto;
+  width: 14px;
+  height: 12px;
+  font-size: 0;
+  line-height: 0;
+  background-color: inherit;
+  background-image: url("../../img/icon-heart.svg");
+  background-repeat: no-repeat;
 }

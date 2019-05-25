@@ -106,4 +106,10 @@
       background-color: rgba($primary-dark, 0.3);
     }
   }
+
+  &--popup {
+    @media (min-width: $tablet-width) {
+      width: 296px;
+    }
+  }
 }

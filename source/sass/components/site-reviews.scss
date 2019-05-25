@@ -2,6 +2,10 @@
 .site-reviews {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .site-reviews__field {
@@ -23,7 +27,10 @@
   font-weight: 300;
   margin-top: 0;
   line-height: 27px;
-  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .site-reviews__title-item {
@@ -40,6 +47,10 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 17px;
+    margin-bottom: 5px;
   }
 }
 
@@ -50,6 +61,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     order: 3;
+    font-size: 14px;
   }
 }
 
@@ -88,7 +100,6 @@
   width: 280px;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -103,11 +114,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding-top: 58px;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
     width: 53%;
     margin-right: 0;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,6 +152,7 @@
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../../img/iphone-screen-mobile@2x.png");
+      background-size: contain;
     }
   }
 
@@ -204,7 +218,7 @@
       background-repeat: no-repeat;
       position: absolute;
       top: -340px;
-      margin-left: -146px;
+      left: 0;
       width: 292px;
       height: 302px;
 
@@ -233,7 +247,7 @@
       background-repeat: no-repeat;
       position: absolute;
       top: -340px;
-      margin-left: -146px;
+      left: 0;
       width: 292px;
       height: 302px;
 
@@ -299,7 +313,7 @@
   }
 }
 
-.more-info__wrapper {
+.site-reviews__info-wrapper {
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -327,7 +341,7 @@
   }
 }
 
-.decoration__item {
+.site-reviews__decoration-item {
   @media (min-width: $tablet-width) {
     position: relative;
     text-align: center;
@@ -335,6 +349,7 @@
     font-weight: 700;
     font-size: 98px;
     line-height: 73px;
+    color: $accent;
     width: 202px;
     height: 202px;
     border: 12px solid $accent;
@@ -365,11 +380,13 @@
   h3 {
     font-size: 31px;
     margin-top: 0;
+    margin-bottom: 51px;
   }
 
   p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 9px;
   }
 }
 

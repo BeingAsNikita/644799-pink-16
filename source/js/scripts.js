@@ -1,8 +1,11 @@
-var ifNoJs = function () {
   var noJs = document.querySelector(".site-nav__wrapper--nojs");
-  console.log(noJs)
+  var topLine = document.querySelector(".site-header__nav-wrapper--noJs");
+
+var ifNoJs = function () {
+  topLine.classList.remove("site-header__nav-wrapper--noJs");
   noJs.classList.remove("site-nav__wrapper--nojs");
   noJs.classList.add("site-nav__wrapper--close");
+
 }
 
 ifNoJs ();
@@ -17,5 +20,5 @@ navToggle.addEventListener( "click", function(evt) {
   navToggle.classList.toggle("site-nav__toggle--open");
   navWrap.classList.toggle("site-nav__wrapper--close");
   navWrap.classList.toggle("site-nav__list--close");
-  headerTop.classList.toggle("site-header__nav-wrapper--close")
+  headerTop.classList.toggle("site-header__nav-wrapper--open")
 });
