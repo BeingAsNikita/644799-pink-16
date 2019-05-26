@@ -24,6 +24,11 @@
     &:active {
       color: rgba($accent, 0.3);
     }
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+      padding: 12px 45px;
+    }
   }
 
   &--submit {
@@ -99,6 +104,12 @@
 
     &:active {
       background-color: rgba($primary-dark, 0.3);
+    }
+  }
+
+  &--popup {
+    @media (min-width: $tablet-width) {
+      width: 296px;
     }
   }
 }

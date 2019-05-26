@@ -1,6 +1,10 @@
 .contacts {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   padding-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__title {
@@ -10,8 +14,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 31px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 
@@ -31,10 +35,12 @@
 
   &--tel {
     order: 0;
+    padding-top: 36px;
   }
 
   &--address {
     order: 2;
+    padding-top: 25px;
 
     @media (min-width: $tablet-width) {
       margin: 0 auto;
@@ -48,6 +54,7 @@
 
   &--mail {
     order: 1;
+    padding-top: 24px;
 
     @media (min-width: $desktop-width) {
       order: 2;
@@ -56,6 +63,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    padding-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,9 +74,10 @@
 .contacts__text {
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -76,4 +85,21 @@
   font-size: 24px;
   font-weight: 300;
   color: $accent;
+  margin-top: 7px;
+
+  &:hover {
+    text-decoration: underline;
+    color: $primary-dark;
+  }
+
+  &:active {
+    text-decoration: underline;
+    color: rgba($primary-dark, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 242px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
 }
