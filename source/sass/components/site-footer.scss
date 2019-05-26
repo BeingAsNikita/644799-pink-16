@@ -62,12 +62,16 @@
   }
 }
 
-.site-footer__logo-link:active {
-  opacity: 0.3;
-}
+.site-footer__logo-link {
+  padding-bottom: 12px;
 
-.site-footer__logo-link:hover .site-footer__logo-pink {
-  fill: $accent;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .site-footer__logo-pink {
+    fill: $accent;
+  }
 }
 
 .social-list {
