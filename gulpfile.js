@@ -73,20 +73,20 @@ collapseWhitespace: true
 
 gulp.task("js", function () {
 return gulp.src("source/js/**/*.js")
-.pipe(sourcemaps.init())
-.pipe(uglify())
-.pipe(concat("script.min.js"))
-.pipe(sourcemaps.write())
-.pipe(gulp.dest("build/js"));
+  .pipe(sourcemaps.init())
+  .pipe(concat("script.js"))
+  .pipe(gulp.dest("build/js"))
+  .pipe(uglify())
+  .pipe(rename("script.min.js"))
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("css", function () {
 return gulp.src("source/sass/style.scss")
 .pipe(plumber())
 .pipe(sourcemaps.init())
-.pipe(sass({
-includePaths: require("node-normalize-scss").includePaths
-}))
+.pipe(sass())
 .pipe(postcss([
 require("autoprefixer")({
 grid: true,
@@ -94,11 +94,12 @@ browsers: ["last 2 versions", "ie 11", "Firefox > 20"]
 }),
 require("postcss-object-fit-images")
 ]))
-.pipe(cleanCSS())
-.pipe(rename("style.min.css"))
-.pipe(sourcemaps.write(""))
-.pipe(gulp.dest("build/css"))
-.pipe(server.stream());
+  .pipe(gulp.dest('build/css'))
+  .pipe(cleanCSS())
+  .pipe(rename("style.min.css"))
+  .pipe(sourcemaps.write(""))
+  .pipe(gulp.dest("build/css"))
+  .pipe(server.stream());
 });
 
 gulp.task("server", function () {
