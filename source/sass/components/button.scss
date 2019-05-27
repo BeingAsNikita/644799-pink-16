@@ -29,12 +29,17 @@
       width: 300px;
       padding: 12px 45px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+      padding: 12px 28px;
+    }
   }
 
   &--submit {
     text-transform: uppercase;
     width: 100%;
-    padding: 24px;
+    padding: 20px;
     border: 1px solid $green;
     border-radius: 2px;
     background-color: $green;
@@ -54,7 +59,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      width: 50%;
+      width: 296px;
     }
 
     @media (min-width: $desktop-width) {
@@ -64,7 +69,7 @@
 
   &--post {
     margin: 0 auto;
-    margin-bottom: 11px;
+    margin-bottom: 12px;
     width: 280px;
     color: $accent;
     padding: 14px 30px;
@@ -84,7 +89,8 @@
 
     @media (min-width: $tablet-width) {
       width: 260px;
-      margin-bottom: 24px;
+      margin-bottom: 23px;
+      padding: 15px 30px;
     }
 
     @media (min-width: $desktop-width) {
