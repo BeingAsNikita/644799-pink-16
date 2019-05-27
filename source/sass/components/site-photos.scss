@@ -79,7 +79,11 @@
 .site-photos__panorama-image {
   display: block;
   width: 100%;
-  min-height: 137;
+  max-height: 137px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 509px;
+  }
 }
 
 .site-photos__list {

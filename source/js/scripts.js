@@ -22,3 +22,5 @@ navToggle.addEventListener( "click", function(evt) {
   navWrap.classList.toggle("site-nav__list--close");
   headerTop.classList.toggle("site-header__nav-wrapper--open")
 });
+
+objectFitImages();
