@@ -62,11 +62,11 @@
           </nav>
         </div>
       </div>
-      <h1 class="site-header__preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="site-header__preview site-header__preview--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <section class="site-form">
-      <p class="site-form__preview container">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните <span class="site-form__preview-hidden">форму ниже:</span>
+      <p class="container site-form__preview">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="site-form__preview-hidden"> Пожалуйста, заполните форму ниже:</span>
       </p>
       <form action="https://echo.htmlacademy.ru" method="post" class="site-form__form site-form">
         <div class="site-form__info">
@@ -86,7 +86,7 @@
           </fieldset>
         </div>
         <div class="site-form__achievements site-form__achievements--grey">
-          <fieldset class="site-form__field site-form__field--border">
+          <fieldset class="site-form__field site-form__field--border site-form__field--achievements">
             <legend class="site-form__legend site-form__legend--achievements">
               Ваши безбашенные достижения в путешествии
             </legend>
@@ -125,7 +125,7 @@
           </fieldset>
         </div>
         <div class="site-form__contacts">
-          <fieldset class="site-form__field site-form__field--border">
+          <fieldset class="site-form__field site-form__field--border site-form__field--contacts">
             <legend class="site-form__legend site-form__legend--contacts">
               Контактная информация
             </legend>
@@ -142,25 +142,25 @@
           </fieldset>
         </div>
         <div class="site-form__os site-form__os--grey">
-          <fieldset class="site-form__field site-form__field--border">
+          <fieldset class="site-form__field site-form__field--border site-form__field--os">
             <legend class="site-form__legend site-form__legend--os">
               С каким приложением путешествовали?
             </legend>
             <ul class="site-form__list">
-              <li class="site-form__item">
+              <li class="site-form__item site-form__item--os">
                 <input class="visually-hidden" type="radio" name="OS" id="iOS" checked>
                 <span class="site-form__radio"></span>
-                <label class="site-form__item-label" for="iOS">Pink для iOS</label>
+                <label class="site-form__item-label site-form__item-label--os" for="iOS">Pink для iOS</label>
               </li>
-              <li class="site-form__item">
+              <li class="site-form__item site-form__item--os">
                 <input class="visually-hidden" type="radio" name="OS" id="Android">
                 <span class="site-form__radio"></span>
-                <label class="site-form__item-label" for="Android">Pink на Android</label>
+                <label class="site-form__item-label site-form__item-label--os" for="Android">Pink на Android</label>
               </li>
-              <li class="site-form__item">
+              <li class="site-form__item site-form__item--os">
                 <input class="visually-hidden" type="radio" name="OS" id="WindowsPhone">
                 <span class="site-form__radio"></span>
-                <label class="site-form__item-label" for="WindowsPhone">WindowsPhone</label>
+                <label class="site-form__item-label site-form__item-label--os" for="WindowsPhone">WindowsPhone</label>
               </li>
             </ul>
           </fieldset>
@@ -175,7 +175,7 @@
         </div>
         <div class="site-form__button">
           <input type="submit" class="button button--submit" value="Отправить форму">
-          <p class="site-form__important"><sup>*</sup> - обязательные поля</p>
+          <p class="site-form__important"><span class="site-form__important-star">*</span> &mdash; обязательные поля <span class="site-form__important-none"> для запoлнения</span></p>
         </div>
       </form>
     </section>
@@ -192,7 +192,7 @@
       <header>
         <h3>Ваша заявка отправлена</h3>
       </header>
-      <p class="popup-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+      <p class="popup-text popup-text--successfully">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
       оповестим вас.</p>
       <footer class="popup__footer popup__footer--successfully">
         <button type="button" class="button button--submit button--popup">Закрыть окно</button>
