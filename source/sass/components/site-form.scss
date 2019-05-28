@@ -417,7 +417,7 @@
 }
 
 input[type="checkbox"]:focus ~ .site-form__item-label--checkbox::before,
-input[type="radio"]:focus ~ .site-form__item-label--os::before   {
+input[type="radio"]:focus ~ .site-form__item-label--os::before {
   border-color: $primary-dark;
 }
 
