@@ -1,6 +1,7 @@
 .button {
   font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
 
   &:disabled {
     cursor: not-allowed;

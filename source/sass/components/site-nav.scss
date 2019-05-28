@@ -16,8 +16,8 @@
   right: 0;
   top: 1px;
   transform: translateY(-110%);
-  background: url("../../img/icon-menu-burger.svg") no-repeat center center;
-  transition: all ease 0.5s;
+  background-color: rgba($white, 0);
+  transition: all ease 0.15s;
 
   @media (min-width: $tablet-width) {
     transform: translateY(-138%);
@@ -109,6 +109,10 @@
 
     &--active {
       border-bottom: 2px solid $white;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 
