@@ -9,6 +9,7 @@
 }
 
 .site-nav__toggle {
+  text-align: center;
   border: none;
   width: 62px;
   height: 62px;
@@ -22,10 +23,34 @@
   @media (min-width: $tablet-width) {
     transform: translateY(-138%);
   }
+}
 
-  &--open {
-    background: url("../../img/icon-menu-cross.svg") no-repeat center center;
-  }
+.site-nav__toggle-close {
+  fill: $white;
+}
+
+.site-nav__toggle-open {
+  margin: 0 auto;
+  fill: $white;
+  display: none;
+}
+
+.site-nav__toggle--open .site-nav__toggle-open {
+  display: block;
+}
+
+.site-nav__toggle--open .site-nav__toggle-close {
+  display: none;
+}
+
+.site-nav__toggle-close:hover,
+.site-nav__toggle-open:hover {
+  fill: $accent;
+}
+
+.site-nav__toggle-close:active,
+.site-nav__toggle-open:active {
+  fill: rgba($accent, 0.3);
 }
 
 .site-nav__wrapper {
@@ -61,6 +86,14 @@
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:active {
+    color: rgba($accent, 0.3);
+  }
 }
 
 @media (min-width: $desktop-width) {

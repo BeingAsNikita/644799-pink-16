@@ -196,4 +196,12 @@
   display: inline-block;
   text-align: right;
   width: 27%;
+
+  &--yes svg {
+    fill: $green-yes;
+  }
+
+  &--no svg {
+    fill: $red-no;
+  }
 }
