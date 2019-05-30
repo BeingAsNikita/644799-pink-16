@@ -444,6 +444,7 @@ input[type="radio"]:checked ~ .site-form__item-label--os::after {
   border-radius: 2px;
   padding: 20px;
   line-height: 25px;
+  resize: none;
 
   @media (min-width: $desktop-width) {
     min-height: 126px;
