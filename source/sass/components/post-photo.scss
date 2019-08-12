@@ -111,6 +111,7 @@
   height: 45px;
   padding: 0;
   background-color: rgba($white, 0);
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 25px;
@@ -234,6 +235,7 @@
   background-color: $white;
   border: 2px solid $accent;
   border-radius: 50%;
+  cursor: pointer;
 
   &:active {
     background-color: $accent;

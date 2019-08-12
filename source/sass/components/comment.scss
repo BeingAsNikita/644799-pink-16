@@ -63,7 +63,6 @@
 }
 
 .comment__date {
-  font-family: italic;
   color: $primary-dark;
 }
 
@@ -99,6 +98,7 @@
   background-color: inherit;
   background-image: url("../../img/icon-heart.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     order: 0;

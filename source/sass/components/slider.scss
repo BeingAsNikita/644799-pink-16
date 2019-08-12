@@ -107,6 +107,12 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &--tariffs {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .slider__toggle {

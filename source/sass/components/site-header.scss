@@ -83,6 +83,14 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+
+  &:hover path {
+    fill: $accent;
+  }
+
+  &:active path {
+    fill: rgba($white, 0.3);
+  }
 }
 
 .site-header__logo-link {

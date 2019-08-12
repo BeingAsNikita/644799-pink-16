@@ -108,19 +108,21 @@
   color: $accent;
   margin-top: 7px;
 
-  &:hover {
-    text-decoration: underline;
-    color: $primary-dark;
-  }
+  &--mail {
+    &:hover {
+      text-decoration: underline;
+      color: $primary-dark;
+    }
 
-  &:active {
-    text-decoration: underline;
-    color: rgba($primary-dark, 0.3);
-  }
+    &:active {
+      text-decoration: underline;
+      color: rgba($primary-dark, 0.3);
+    }
 
-  @media (min-width: $tablet-width) {
-    width: 242px;
-    margin: 0 auto;
-    margin-top: 14px;
+    @media (min-width: $tablet-width) {
+      width: 242px;
+      margin: 0 auto;
+      margin-top: 14px;
+    }
   }
 }
