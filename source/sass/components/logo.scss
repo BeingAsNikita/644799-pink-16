@@ -1,0 +1,40 @@
+.logo-word {
+  fill: $white;
+}
+
+.logo-stars {
+  display: none;
+}
+
+.logo-glasses {
+  fill: $white;
+  display: none;
+}
+
+.logo-glasses-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo-glasses {
+    fill: $white;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo-stars {
+    display: block;
+    fill: $accent;
+  }
+
+  .logo-glasses {
+    fill: $white;
+    display: none;
+  }
+
+  .logo-glasses-desktop {
+    display: block;
+    fill: $white;
+  }
+}
