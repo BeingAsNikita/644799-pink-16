@@ -83,6 +83,14 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+
+  &:hover path {
+    fill: $accent;
+  }
+
+  &:active path {
+    fill: rgba($white, 0.3);
+  }
 }
 
 .site-header__logo-link {
@@ -93,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-self: center;
+    margin-left: 10px;
   }
 }
 
@@ -107,21 +115,38 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  padding-top: 34px;
+  padding-top: 31px;
   padding-bottom: 82px;
+  line-height: 28px;
 
   @media (min-width: $tablet-width) {
-    width: 320px;
-    font-size: 48px;
-    line-height: 54px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    width: 350px;
+    font-size: 50px;
+    line-height: 58px;
+    padding-top: 73px;
+    padding-bottom: 140px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
-    font-size: 48px;
+    width: 600px;
+    font-size: 50px;
     line-height: 54px;
+    padding-top: 73px;
+    padding-bottom: 103px;
+  }
+
+  &--form {
+    padding-bottom: 55px;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      padding-bottom: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 900px;
+      padding-bottom: 103px;
+    }
   }
 }
 
